@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Privacy Policy | MUSKURA GROUP</title>
+<meta name="description" content="How MUSKURA GROUP handles personal information collected through its website.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MUSKURA GROUP">
+<meta property="og:title" content="Privacy Policy | MUSKURA GROUP">
+<meta property="og:description" content="How MUSKURA GROUP handles personal information collected through its website.">
+<meta name="theme-color" content="#0E7A4F">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:alt" content="MUSKURA GROUP logo with the tagline Innovating Africa's Future Through Media, Technology and Opportunity">
+<meta name="twitter:image" content="og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: single white page, left-aligned editorial sections, hairline dividers, color only as small accents. */
+:root{
+  --bg:#FFFFFF;
+  --ink:#10201A;        /* green-tinted near-black */
+  --muted:#5A6B62;
+  --line:#E4EBE7;
+  --green:#0E7A4F;
+  --green-soft:#EAF6F0;
+  --gold:#C39A2E;
+  --gold-soft:#FBF4E1;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'Figtree','Segoe UI',system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);letter-spacing:-.02em;line-height:1.1;text-wrap:balance;font-weight:600}
+p{text-wrap:pretty}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:4px}
+
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:clamp(64px,9vw,112px)}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--green);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--gold)}
+.lead{color:var(--muted);font-size:1.125rem;max-width:60ch}
+.hr{border:0;border-top:1px solid var(--line)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:42px;height:38px;flex:none}
+.brand b{display:block;font-family:var(--display);font-weight:700;letter-spacing:.2em;font-size:1rem;line-height:1}
+.brand i{display:block;font-style:normal;font-size:.625rem;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-top:5px}
+nav{display:flex;align-items:center;gap:30px;font-size:.9rem;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:.85rem 1.5rem;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid transparent;cursor:pointer;font-family:var(--body);transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:#0A6340;transform:translateY(-1px)}
+.btn-line{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-line:hover{border-color:var(--green);color:var(--green)}
+nav .btn{padding:.6rem 1.2rem;color:#fff}
+nav .btn:hover{color:#fff}
+.menu{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:8px;cursor:pointer;color:var(--ink)}
+#mm{display:none;border-top:1px solid var(--line);padding:16px 0 20px}
+#mm a{display:block;padding:10px 0;font-weight:500}
+#mm.open{display:block}
+
+/* hero */
+.hero{padding-top:clamp(56px,8vw,110px);padding-bottom:clamp(56px,8vw,96px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);margin:20px 0 24px}
+.hero h1 em{font-style:normal;color:var(--green);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:var(--gold);border-radius:2px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.panel{border:1px solid var(--line);border-radius:20px;padding:8px 24px;background:#fff;box-shadow:0 24px 50px -30px rgba(16,32,26,.25)}
+.panel li{list-style:none;display:flex;gap:16px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.panel li:last-child{border-bottom:0}
+.panel small{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);min-width:74px}
+.panel span{font-family:var(--display);font-weight:600;font-size:1.15rem}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px)}
+.about h2,.sec-head h2{font-size:clamp(2rem,4.4vw,3.25rem);margin:16px 0 20px}
+.about p+p{margin-top:16px;color:var(--muted)}
+.stats{display:flex;gap:40px;margin-top:36px;flex-wrap:wrap}
+.stats div{border-left:2px solid var(--gold);padding-left:16px}
+.stats b{display:block;font-family:var(--display);font-size:2.4rem;font-weight:700;color:var(--green);line-height:1}
+.stats span{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.steps{display:grid;gap:0;align-content:start}
+.step{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding:22px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step .n{width:44px;height:44px;border-radius:50%;background:var(--green-soft);color:var(--green);display:grid;place-items:center;font-family:var(--display);font-weight:700}
+.step h4{font-size:1.15rem;margin-bottom:4px}
+.step p{color:var(--muted);font-size:.95rem}
+
+/* ventures */
+.tint{background:#F7FAF8;border-block:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{padding:.5rem 1rem;border-radius:999px;border:1px solid var(--line);background:#fff;font:500 .85rem var(--body);color:var(--muted);cursor:pointer;transition:.2s}
+.tab:hover{border-color:var(--green);color:var(--green)}
+.tab.on{background:var(--green);border-color:var(--green);color:#fff}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;transition:border-color .25s,box-shadow .25s,transform .25s}
+.card:hover{border-color:#cfe3d8;box-shadow:0 20px 40px -24px rgba(14,122,79,.35);transform:translateY(-3px)}
+.card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.ico{width:46px;height:46px;border-radius:12px;background:var(--green-soft);color:var(--green);display:grid;place-items:center}
+.ico svg{width:22px;height:22px}
+.pill{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .65rem;border-radius:999px;background:var(--green-soft);color:var(--green)}
+.pill.dev{background:var(--gold-soft);color:#8A6A12}
+.pill.exp{background:#F1F3F2;color:var(--muted)}
+.card h3{font-size:1.3rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.95rem}
+.card ul{list-style:none;border-top:1px solid var(--line);padding-top:16px;display:grid;gap:8px;font-size:.88rem}
+.card li{display:flex;gap:10px;align-items:center}
+.card li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);flex:none}
+
+/* projects */
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.proj{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.proj .body{padding:32px;display:grid;gap:18px}
+.proj h3{font-size:1.6rem}
+.proj p{color:var(--muted)}
+.proj .meta{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.8rem;color:var(--muted)}
+.mock{border:1px solid var(--line);border-radius:14px;background:#F7FAF8;padding:14px;display:grid;gap:12px}
+.mock .dots{display:flex;gap:6px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:10px;font:.7rem ui-monospace,Menlo,monospace;color:var(--muted)}
+.mock .dots i{width:9px;height:9px;border-radius:50%;background:#d6dfda}
+.mock .dots i:first-child{background:var(--gold)}
+.mock .dots i:nth-child(2){background:var(--green)}
+.lines{display:grid;gap:8px}
+.lines div{height:10px;border-radius:5px;background:#E2EAE6}
+.lines div.g{background:var(--green);opacity:.75}
+.lines div.y{background:var(--gold);opacity:.75}
+.bars{display:flex;align-items:flex-end;gap:8px;height:64px}
+.bars div{flex:1;border-radius:4px 4px 0 0;background:#DCE7E1}
+.bars div.g{background:var(--green)}
+.bars div.y{background:var(--gold)}
+.mock .foot{display:flex;justify-content:space-between;font:.72rem ui-monospace,Menlo,monospace;color:var(--muted)}
+.proj .act{padding:18px 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.82rem;color:var(--muted);background:#FBFCFB}
+.link{font:600 .88rem var(--body);color:var(--green);background:none;border:0;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.link:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* vision */
+.vgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.v{padding:36px 32px;display:grid;gap:16px;align-content:start}
+.v+.v{border-left:1px solid var(--line)}
+.v .ico{width:54px;height:54px;border-radius:16px}
+.v .ico.gold{background:var(--gold-soft);color:#A07B1C}
+.v .ico svg{width:26px;height:26px}
+.v h3{font-size:1.5rem}
+.v p{color:var(--muted)}
+.vals{list-style:none;display:grid;gap:12px}
+.vals li{display:flex;gap:12px;align-items:center;font-weight:500}
+.vals svg{width:22px;height:22px;padding:5px;border-radius:50%;background:var(--green-soft);color:var(--green);flex:none}
+
+/* cta */
+.cta{background:var(--green);color:#fff;border-radius:26px;padding:clamp(36px,6vw,72px);display:grid;gap:18px;justify-items:start;position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;border:2px solid var(--gold);opacity:.55}
+.cta h2{font-size:clamp(1.9rem,4.4vw,3rem);max-width:18ch}
+.cta p{color:#CDEBDD;max-width:52ch}
+.cta .btn{background:#fff;color:var(--green)}
+.cta .btn:hover{background:var(--gold-soft)}
+
+/* contact */
+.cgrid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,80px)}
+.cgrid h2{font-size:clamp(2rem,4.4vw,3rem);margin:16px 0 18px}
+.info{display:grid;gap:12px;margin-top:28px}
+.info div{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.info small{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.info b{font-weight:600;overflow-wrap:anywhere}
+form{border:1px solid var(--line);border-radius:22px;padding:clamp(22px,4vw,36px);display:grid;gap:20px;background:#fff;box-shadow:0 24px 50px -34px rgba(16,32,26,.3)}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+label{display:block;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+input,select,textarea{width:100%;font:inherit;font-size:.95rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(14,122,79,.14)}
+#ok{color:var(--green);font-weight:500;font-size:.9rem;text-align:center}
+
+/* footer */
+footer{border-top:1px solid var(--line);background:#F7FAF8;padding-block:56px 40px}
+.lockup{display:flex;justify-content:center;padding-bottom:40px;margin-bottom:32px;border-bottom:1px solid var(--line)}
+.lockup svg{height:150px;width:auto;max-width:100%}
+.fbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;font-size:.85rem;color:var(--muted)}
+.fbar nav{gap:22px;font-size:.85rem}
+
+
+@media (max-width:940px){
+  .hero-grid,.about-grid,.cgrid,.grid2{grid-template-columns:minmax(0,1fr)}
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vgrid{grid-template-columns:minmax(0,1fr)}
+  .v+.v{border-left:0;border-top:1px solid var(--line)}
+  nav.main{display:none}
+  .menu{display:block}
+}
+@media (max-width:620px){
+  .grid3,.two{grid-template-columns:minmax(0,1fr)}
+  .hero h1 em{white-space:normal}
+  .lockup svg{height:110px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* additions for improved content */
+:root{--err:#B3261E;--err-soft:#FCEDEB}
+.panel li div span{display:block}
+.panel li div p{font-size:.9rem;color:var(--muted);margin-top:2px}
+.panel small{min-width:92px}
+.callout{margin-top:28px;border:1px solid var(--line);border-left:3px solid var(--gold);background:var(--gold-soft);border-radius:14px;padding:16px 20px;display:grid;gap:4px}
+.callout small{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6A12}
+.callout b{font-family:var(--display);font-size:1.35rem;font-weight:600}
+.step{grid-template-columns:48px minmax(0,1fr)}
+.step .ico{width:44px;height:44px}
+.legend{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:.88rem;color:var(--muted);margin-bottom:24px}
+.legend>span{display:inline-flex;gap:10px;align-items:center;flex-wrap:wrap}
+.kv{display:grid;gap:4px;margin-top:6px}
+.kv dt{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-top:10px}
+.kv dd{margin:0;color:var(--muted);font-size:.95rem}
+.card[hidden]{display:none}
+.card .link{align-self:flex-start}
+.fine{margin-top:20px;font-size:.85rem;color:var(--muted)}
+.appr{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.appr li{padding:24px 20px 0 0}
+.appr b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--green-soft);color:var(--green);font-family:var(--display);margin-bottom:14px}
+.appr h4{font-size:1.1rem;margin-bottom:6px}
+.appr p{color:var(--muted);font-size:.92rem}
+.founder{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(24px,6vw,80px)}
+.founder h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-top:16px}
+.founder blockquote{margin:0;display:grid;gap:16px;border-left:3px solid var(--gold);padding-left:clamp(18px,3vw,32px);font-size:1.15rem;line-height:1.7}
+.founder blockquote footer{border:0;background:none;padding:0;font-family:var(--display);font-size:1.15rem;font-weight:600;color:var(--ink);display:grid;gap:2px}
+.founder blockquote footer span{font-family:var(--body);font-size:.85rem;font-weight:500;color:var(--green)}
+.tl{list-style:none;padding:0;display:grid;gap:0;max-width:760px}
+.tl li{display:grid;grid-template-columns:104px minmax(0,1fr);gap:20px;padding:22px 0;border-top:1px solid var(--line);align-items:start}
+.tl li:last-child{border-bottom:1px solid var(--line)}
+.tl .pill{justify-self:start}
+.tl h4{font-size:1.1rem;margin-bottom:4px}
+.tl p{color:var(--muted);font-size:.95rem}
+.tl .next{opacity:.8}
+.aud{list-style:none;padding:0;display:grid;gap:12px;margin-top:24px}
+.aud li{color:var(--muted);font-size:.95rem}
+.aud b{display:block;color:var(--ink);font-weight:600}
+.mail{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.copy{font:600 .78rem var(--body);border:1px solid var(--line);background:#fff;border-radius:999px;padding:.3rem .8rem;cursor:pointer;color:var(--green)}
+.copy:hover{border-color:var(--green)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.err{display:block;min-height:0;color:var(--err);font-size:.82rem;margin-top:6px}
+input[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:var(--err)}
+#status{border-radius:12px;padding:14px 16px;font-size:.92rem}
+#status.ok{background:var(--green-soft);color:#0A5A3A}
+#status.bad{background:var(--err-soft);color:#7A1812}
+#status a{color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+#send[disabled]{opacity:.6;cursor:wait}
+@media (max-width:940px){
+  .appr{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}
+  .founder{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:620px){
+  .appr{grid-template-columns:minmax(0,1fr)}
+  .tl li{grid-template-columns:minmax(0,1fr);gap:8px}
+}
+.fine a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+/* legal pages */
+:root{--prose:#33443B}
+.legal-hero{padding-top:clamp(40px,6vw,80px);padding-bottom:clamp(20px,3vw,36px)}
+.legal-hero .back{font-size:.9rem;font-weight:600;color:var(--green)}
+.legal-hero .back:hover{text-decoration:underline;text-underline-offset:4px}
+.legal-hero h1{font-size:clamp(2.2rem,5vw,3.5rem);margin:20px 0 10px}
+.legal-hero .meta{color:var(--muted);font-size:.9rem;margin-bottom:14px}
+.legal-grid{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start;padding-bottom:clamp(64px,9vw,112px);padding-top:16px}
+.toc{display:block;gap:0;position:sticky;top:calc(96px + env(safe-area-inset-top,0px));border:1px solid var(--line);border-radius:16px;padding:18px 20px;font-size:.88rem;background:#fff}
+.toc b{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
+.toc ol{list-style:none;padding:0;display:grid;gap:0}
+.toc a{display:block;padding:6px 0;color:var(--muted)}
+.toc a:hover{color:var(--green)}
+.prose{max-width:72ch;min-width:0}
+.prose section{padding-block:0 40px;scroll-margin-top:calc(96px + env(safe-area-inset-top,0px))}
+.prose h2{font-size:1.5rem;margin-bottom:14px}
+.prose p,.prose li{color:var(--prose)}
+.prose p+p,.prose p+ul,.prose ul+p{margin-top:14px}
+.prose ul{margin:12px 0 0 1.2rem;display:grid;gap:8px}
+.prose li::marker{color:var(--gold)}
+.prose a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.prose b{color:var(--ink);font-weight:600}
+.tbl{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:14px}
+.tbl table{border-collapse:collapse;width:100%;min-width:600px;font-size:.9rem}
+.tbl th,.tbl td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--prose)}
+.tbl th{background:#F7FAF8;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tbl tr:last-child td{border-bottom:0}
+@media (max-width:940px){.legal-grid{grid-template-columns:minmax(0,1fr)}.toc{position:static}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="bar">
+      <a href="index.html" class="brand" aria-label="MUSKURA GROUP home">
+        <svg viewBox="500 366 250 220" fill="none" role="img" aria-label="MUSKURA GROUP logo mark"><polyline points="520,570 520,410 600,490 680,410 680,570" stroke="#10201A" stroke-width="16" stroke-linejoin="miter" stroke-linecap="butt"/><circle cx="722" cy="388" r="12" fill="#C39A2E"/></svg>
+        <span><b>MUSKURA</b><i>Group</i></span>
+      </a>
+      <nav class="main" aria-label="Main">
+        <a href="index.html#about">About</a><a href="index.html#ventures">Ventures</a><a href="index.html#approach">Approach</a><a href="index.html#journey">Journey</a>
+        <a href="index.html#contact" class="btn btn-green">Partner With Us</a>
+      </nav>
+      <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <div id="mm">
+      <a href="index.html#about">About</a><a href="index.html#ventures">Ventures</a><a href="index.html#approach">Approach</a><a href="index.html#journey">Journey</a><a href="index.html#contact" style="color:var(--green);font-weight:600">Partner With Us</a>
+    </div>
+  </div>
+</header>
+<main id="top">
+<div class="wrap legal-hero">
+  <a href="index.html" class="back">&larr; Back to home</a>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 24 October 2026</p>
+  <p class="lead">How we handle the personal information you share with us through this website.</p>
+</div>
+<div class="wrap legal-grid">
+  <nav class="toc" aria-label="On this page"><b>On this page</b><ol><li><a href="#intro">1. Introduction</a></li><li><a href="#collect">2. Information we collect</a></li><li><a href="#use">3. How we use information</a></li><li><a href="#third-party">4. Contact form and third-party services</a></li><li><a href="#cookies">5. Cookies and similar technologies</a></li><li><a href="#sharing">6. Sharing information</a></li><li><a href="#retention">7. Data retention</a></li><li><a href="#security">8. Data security</a></li><li><a href="#rights">9. Your privacy rights</a></li><li><a href="#international">10. International visitors and data transfers</a></li><li><a href="#children">11. Children's privacy</a></li><li><a href="#changes">12. Changes to this policy</a></li><li><a href="#contact-us">13. Contact</a></li></ol></nav>
+  <article class="prose">
+<section id="intro">
+  <h2>1. Introduction</h2>
+  <p>This Privacy Policy explains how MUSKURA GROUP ("MUSKURA GROUP", "we", "us") handles personal information when you visit this website or contact us through it.</p>
+  <p>MUSKURA GROUP is an early-stage venture group based in Abuja FCT, Nigeria. This policy applies to this website only. It does not cover our pages on social media platforms or any other website we link to. Those are run by other companies and have their own privacy policies.</p>
+  <p>We have tried to keep this policy short and plain. If anything is unclear, email us at <a href="mailto:MUSKURAGROUP@GMAIL.COM">MUSKURAGROUP@GMAIL.COM</a>.</p>
+</section>
+
+<section id="collect">
+  <h2>2. Information we collect</h2>
+  <p><b>Information you give us.</b> If you use the contact form, we receive:</p>
+  <ul>
+    <li>your name and email address;</li>
+    <li>the option you choose under "I am a" (for example, potential user, investor or business partner);</li>
+    <li>the message you write, and anything else you choose to include in it.</li>
+  </ul>
+  <p>If you email us directly, we receive your email address, your name if it shows in your email, and your message. Please do not include sensitive information, such as health details, ID numbers or bank details, in a message to us.</p>
+  <p><b>Information collected automatically.</b> This website does not use analytics tools, advertising trackers or user accounts. However, when your browser loads the website, technical information such as your IP address, browser type, device details, the pages requested and the time of the request is normally received by the companies that deliver the site and its resources. These include the service that hosts the website and Google Fonts (see section 4). Those companies may keep logs for security and operational reasons.</p>
+  <p><b>Spam protection.</b> The contact form contains a hidden field that real visitors never see or fill in. It helps us spot automated spam and does not collect personal information.</p>
+</section>
+
+<section id="use">
+  <h2>3. How we use information</h2>
+  <p>We use the information you give us to:</p>
+  <ul>
+    <li>respond to your enquiry;</li>
+    <li>communicate with you about what you contacted us about, such as a venture, partnership or collaboration;</li>
+    <li>maintain and protect the website;</li>
+    <li>prevent spam, abuse and unauthorised access;</li>
+    <li>meet legal obligations that apply to us.</li>
+  </ul>
+  <p>We do not sell personal information collected through this website. We will not add you to a mailing list unless you ask us to.</p>
+  <p>Where Nigerian data protection law requires a lawful basis, we rely on your consent when you choose to send us a message, on our legitimate interests in answering enquiries and keeping the website safe, and on legal obligations where they apply.</p>
+</section>
+
+<section id="third-party">
+  <h2>4. Contact form and third-party services</h2>
+  <p>The contact form is handled by <b>Formspree</b> (<a href="https://formspree.io/" rel="noopener" target="_blank">formspree.io</a>), an online form service. When you press "Send message", your name, email address, chosen role and message are sent from your browser to Formspree. Formspree processes the submission and passes it to our email inbox. Formspree is an independent company. It may also collect technical details, such as your IP address, while handling your submission, and it may store submissions on its own systems. We do not control how Formspree handles information. Please read the privacy policy published on Formspree's website to see how it does so.</p>
+  <p>We receive enquiries at a Gmail address, so the messages we receive are also handled by Google as our email provider, under Google's own terms and privacy policy.</p>
+  <div class="tbl" role="region" aria-label="Who handles what" tabindex="0">
+    <table>
+      <thead><tr><th scope="col">Who</th><th scope="col">What they do</th><th scope="col">Information involved</th></tr></thead>
+      <tbody>
+        <tr><td><b>MUSKURA GROUP</b></td><td>Reads and replies to your message, and decides how it is used.</td><td>Your message and email once it reaches our inbox, and our replies.</td></tr>
+        <tr><td><b>Formspree</b></td><td>Receives the contact form submission and forwards it to us.</td><td>Name, email, role, message, and technical details of the submission.</td></tr>
+        <tr><td><b>Google (Gmail)</b></td><td>Provides the email service we use to receive and answer messages.</td><td>Emails sent to and from our address.</td></tr>
+        <tr><td><b>Google Fonts</b></td><td>Delivers the typefaces used on this website.</td><td>Technical details of your browser's request, such as IP address and browser type.</td></tr>
+        <tr><td><b>Website host</b></td><td>Stores and delivers this website's files.</td><td>Technical request logs, such as IP address, pages requested and time.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>If you prefer not to use the form, you can email us directly.</p>
+</section>
+
+<section id="cookies">
+  <h2>5. Cookies and similar technologies</h2>
+  <p>At the time of this update, the website's own code does not set cookies, does not use analytics or advertising trackers, and does not store tracking information in your browser (for example, in local storage).</p>
+  <p>Companies that deliver parts of the website, such as the hosting service, Google Fonts and Formspree, have their own practices, which we do not control. If you follow a link to a social media platform or another website, that site may set its own cookies under its own policies.</p>
+  <p>If we add analytics or similar tools in future, we will update this policy.</p>
+</section>
+
+<section id="sharing">
+  <h2>6. Sharing information</h2>
+  <p>We share personal information only where it is reasonably necessary, for example with:</p>
+  <ul>
+    <li>service providers that help us run the website and handle enquiries (such as those in section 4);</li>
+    <li>professional advisers, where we need their advice;</li>
+    <li>authorities or other parties, where the law requires it or where we need to protect our rights, our users or the security of the website.</li>
+  </ul>
+  <p>We cannot promise that information will never be shared, because the law may sometimes require us to disclose it.</p>
+</section>
+
+<section id="retention">
+  <h2>7. Data retention</h2>
+  <p>We keep personal information only for as long as is reasonably necessary for the purpose it was collected, for example to answer your enquiry and any follow-up, and for as long as the law requires. We have not set a fixed retention period. When we no longer need the information, we delete it or make it anonymous.</p>
+  <p>Our service providers may keep their own copies according to their own policies. You can ask us about information we hold, and you can read their policies for information they hold.</p>
+</section>
+
+<section id="security">
+  <h2>8. Data security</h2>
+  <p>We take reasonable steps to protect personal information. For example, the contact form sends your submission to Formspree over an encrypted (HTTPS) connection, and we aim to limit access to enquiries to the people who need them.</p>
+  <p>No website, internet transmission or storage system is completely secure, so we cannot guarantee the security of information you send us. Please avoid sending sensitive information.</p>
+</section>
+
+<section id="rights">
+  <h2>9. Your privacy rights</h2>
+  <p>MUSKURA GROUP is based in Nigeria, so the <b>Nigeria Data Protection Act 2023</b> applies to our handling of personal information. Under that law and other applicable laws, you may have the right to:</p>
+  <ul>
+    <li>ask what personal information we hold about you and get a copy;</li>
+    <li>ask us to correct information that is wrong or incomplete;</li>
+    <li>ask us to delete your information in certain circumstances;</li>
+    <li>ask us to restrict or stop certain uses of your information;</li>
+    <li>receive your information in a commonly used format where the law allows;</li>
+    <li>withdraw your consent at any time, which does not affect what we did before you withdrew it.</li>
+  </ul>
+  <p>These rights are subject to conditions and exceptions in the law.</p>
+  <p><b>How to use your rights.</b> Email <a href="mailto:MUSKURAGROUP@GMAIL.COM">MUSKURAGROUP@GMAIL.COM</a> with the subject "Privacy request". Tell us your name, the email address you used to contact us, and what you would like us to do. We may ask you to confirm your identity first. We will respond within the time that applicable law requires.</p>
+  <p><b>Concerns and complaints.</b> Please contact us first so we can try to put things right. You also have the right to complain to the Nigeria Data Protection Commission, the regulator under the Nigeria Data Protection Act 2023.</p>
+  <p>If you live outside Nigeria, the law where you live may give you additional rights. We will consider requests under the laws that apply to us. We do not assume that every country's law applies to every visitor.</p>
+</section>
+
+<section id="international">
+  <h2>10. International visitors and data transfers</h2>
+  <p>This website can be visited from anywhere in the world. Some of the services described in section 4, such as Formspree and Google, may process information on servers outside Nigeria. We have not independently verified where each provider stores information. By sending us a message, you understand that your information may be processed in other countries by these providers. We choose established providers and rely on the safeguards they publish, and we do not guarantee those safeguards ourselves.</p>
+</section>
+
+<section id="children">
+  <h2>11. Children's privacy</h2>
+  <p>This website is intended for adults and organisations. It is not designed for children, and we do not knowingly collect personal information from children. Nigerian law has special rules about children's information. If you believe a child has sent us personal information, please email us and we will delete it where appropriate.</p>
+</section>
+
+<section id="changes">
+  <h2>12. Changes to this policy</h2>
+  <p>We may update this policy from time to time, for example if we add new services to the website. The updated version will be published on this page, and the "Last updated" date at the top will change. If a change is significant, we will say so on the website. Please check back from time to time.</p>
+</section>
+
+<section id="contact-us">
+  <h2>13. Contact</h2>
+  <p>For privacy questions or requests:</p>
+  <ul>
+    <li>Email: <a href="mailto:MUSKURAGROUP@GMAIL.COM">MUSKURAGROUP@GMAIL.COM</a></li>
+    <li>Location: Abuja FCT, Nigeria</li>
+  </ul>
+</section>
+
+  </article>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="lockup">
+      <svg viewBox="250 370 700 455" fill="none" stroke="#10201A" stroke-linejoin="miter" stroke-linecap="butt" role="img" aria-label="MUSKURA GROUP logo">
+        <polyline points="520,570 520,410 600,490 680,410 680,570" stroke-width="14"/>
+        <circle cx="722" cy="388" r="10" fill="#C39A2E" stroke="none"/>
+        <g stroke-width="8">
+          <path d="M270 740 V670 L300 710 L330 670 V740"/>
+          <path d="M370 670 V720 Q370 740 390 740 H410 Q430 740 430 720 V670"/>
+          <path d="M530 670 H487.5 A17.5 17.5 0 0 0 487.5 705 H512.5 A17.5 17.5 0 0 1 512.5 740 H470"/>
+          <path d="M570 670 V740 M630 670 L572 706 L630 740"/>
+          <path d="M670 670 V720 Q670 740 690 740 H710 Q730 740 730 720 V670"/>
+          <path d="M770 740 V670 H805 Q830 670 830 687.5 Q830 705 805 705 H770 M800 705 L830 740"/>
+          <path d="M870 740 L900 670 L930 740"/>
+        </g>
+        <text x="600" y="810" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" letter-spacing="18" fill="#5A6B62" stroke="none">GROUP</text>
+      </svg>
+    </div>
+    <div class="fbar">
+      <span>&copy; <span id="yr">2026</span> MUSKURA GROUP. All rights reserved.</span>
+      <nav aria-label="Footer"><a href="index.html#about">About</a><a href="index.html#ventures">Ventures</a><a href="index.html#contact">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+    </div>
+  </div>
+</footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var menu=document.getElementById('menu'),mm=document.getElementById('mm');
+menu.addEventListener('click',function(){var o=mm.classList.toggle('open');menu.setAttribute('aria-expanded',o)});
+mm.addEventListener('click',function(){mm.classList.remove('open')});
+</script>
+</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>MUSKURA GROUP</title>
+<meta name="description" content="MUSKURA GROUP is an early-stage venture group building businesses that solve meaningful problems through technology, creativity and entrepreneurship in Africa.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MUSKURA GROUP">
+<meta property="og:title" content="MUSKURA GROUP | Innovating Africa's Future Through Media, Technology &amp; Opportunity">
+<meta property="og:description" content="An early-stage venture group building useful, scalable businesses in media, technology and opportunity.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E7A4F">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:alt" content="MUSKURA GROUP logo with the tagline Innovating Africa's Future Through Media, Technology and Opportunity">
+<meta name="twitter:image" content="og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: single white page, left-aligned editorial sections, hairline dividers, color only as small accents. */
+:root{
+  --bg:#FFFFFF;
+  --ink:#10201A;        /* green-tinted near-black */
+  --muted:#5A6B62;
+  --line:#E4EBE7;
+  --green:#0E7A4F;
+  --green-soft:#EAF6F0;
+  --gold:#C39A2E;
+  --gold-soft:#FBF4E1;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'Figtree','Segoe UI',system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);letter-spacing:-.02em;line-height:1.1;text-wrap:balance;font-weight:600}
+p{text-wrap:pretty}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:4px}
+
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:clamp(64px,9vw,112px)}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--green);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--gold)}
+.lead{color:var(--muted);font-size:1.125rem;max-width:60ch}
+.hr{border:0;border-top:1px solid var(--line)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:42px;height:38px;flex:none}
+.brand b{display:block;font-family:var(--display);font-weight:700;letter-spacing:.2em;font-size:1rem;line-height:1}
+.brand i{display:block;font-style:normal;font-size:.625rem;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-top:5px}
+nav{display:flex;align-items:center;gap:30px;font-size:.9rem;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:.85rem 1.5rem;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid transparent;cursor:pointer;font-family:var(--body);transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:#0A6340;transform:translateY(-1px)}
+.btn-line{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-line:hover{border-color:var(--green);color:var(--green)}
+nav .btn{padding:.6rem 1.2rem;color:#fff}
+nav .btn:hover{color:#fff}
+.menu{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:8px;cursor:pointer;color:var(--ink)}
+#mm{display:none;border-top:1px solid var(--line);padding:16px 0 20px}
+#mm a{display:block;padding:10px 0;font-weight:500}
+#mm.open{display:block}
+
+/* hero */
+.hero{padding-top:clamp(56px,8vw,110px);padding-bottom:clamp(56px,8vw,96px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);margin:20px 0 24px}
+.hero h1 em{font-style:normal;color:var(--green);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:var(--gold);border-radius:2px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.panel{border:1px solid var(--line);border-radius:20px;padding:8px 24px;background:#fff;box-shadow:0 24px 50px -30px rgba(16,32,26,.25)}
+.panel li{list-style:none;display:flex;gap:16px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.panel li:last-child{border-bottom:0}
+.panel small{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);min-width:74px}
+.panel span{font-family:var(--display);font-weight:600;font-size:1.15rem}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px)}
+.about h2,.sec-head h2{font-size:clamp(2rem,4.4vw,3.25rem);margin:16px 0 20px}
+.about p+p{margin-top:16px;color:var(--muted)}
+.stats{display:flex;gap:40px;margin-top:36px;flex-wrap:wrap}
+.stats div{border-left:2px solid var(--gold);padding-left:16px}
+.stats b{display:block;font-family:var(--display);font-size:2.4rem;font-weight:700;color:var(--green);line-height:1}
+.stats span{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.steps{display:grid;gap:0;align-content:start}
+.step{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding:22px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step .n{width:44px;height:44px;border-radius:50%;background:var(--green-soft);color:var(--green);display:grid;place-items:center;font-family:var(--display);font-weight:700}
+.step h4{font-size:1.15rem;margin-bottom:4px}
+.step p{color:var(--muted);font-size:.95rem}
+
+/* ventures */
+.tint{background:#F7FAF8;border-block:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{padding:.5rem 1rem;border-radius:999px;border:1px solid var(--line);background:#fff;font:500 .85rem var(--body);color:var(--muted);cursor:pointer;transition:.2s}
+.tab:hover{border-color:var(--green);color:var(--green)}
+.tab.on{background:var(--green);border-color:var(--green);color:#fff}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;transition:border-color .25s,box-shadow .25s,transform .25s}
+.card:hover{border-color:#cfe3d8;box-shadow:0 20px 40px -24px rgba(14,122,79,.35);transform:translateY(-3px)}
+.card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.ico{width:46px;height:46px;border-radius:12px;background:var(--green-soft);color:var(--green);display:grid;place-items:center}
+.ico svg{width:22px;height:22px}
+.pill{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .65rem;border-radius:999px;background:var(--green-soft);color:var(--green)}
+.pill.dev{background:var(--gold-soft);color:#8A6A12}
+.pill.exp{background:#F1F3F2;color:var(--muted)}
+.card h3{font-size:1.3rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.95rem}
+.card ul{list-style:none;border-top:1px solid var(--line);padding-top:16px;display:grid;gap:8px;font-size:.88rem}
+.card li{display:flex;gap:10px;align-items:center}
+.card li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);flex:none}
+
+/* projects */
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.proj{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.proj .body{padding:32px;display:grid;gap:18px}
+.proj h3{font-size:1.6rem}
+.proj p{color:var(--muted)}
+.proj .meta{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.8rem;color:var(--muted)}
+.mock{border:1px solid var(--line);border-radius:14px;background:#F7FAF8;padding:14px;display:grid;gap:12px}
+.mock .dots{display:flex;gap:6px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:10px;font:.7rem ui-monospace,Menlo,monospace;color:var(--muted)}
+.mock .dots i{width:9px;height:9px;border-radius:50%;background:#d6dfda}
+.mock .dots i:first-child{background:var(--gold)}
+.mock .dots i:nth-child(2){background:var(--green)}
+.lines{display:grid;gap:8px}
+.lines div{height:10px;border-radius:5px;background:#E2EAE6}
+.lines div.g{background:var(--green);opacity:.75}
+.lines div.y{background:var(--gold);opacity:.75}
+.bars{display:flex;align-items:flex-end;gap:8px;height:64px}
+.bars div{flex:1;border-radius:4px 4px 0 0;background:#DCE7E1}
+.bars div.g{background:var(--green)}
+.bars div.y{background:var(--gold)}
+.mock .foot{display:flex;justify-content:space-between;font:.72rem ui-monospace,Menlo,monospace;color:var(--muted)}
+.proj .act{padding:18px 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.82rem;color:var(--muted);background:#FBFCFB}
+.link{font:600 .88rem var(--body);color:var(--green);background:none;border:0;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.link:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* vision */
+.vgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.v{padding:36px 32px;display:grid;gap:16px;align-content:start}
+.v+.v{border-left:1px solid var(--line)}
+.v .ico{width:54px;height:54px;border-radius:16px}
+.v .ico.gold{background:var(--gold-soft);color:#A07B1C}
+.v .ico svg{width:26px;height:26px}
+.v h3{font-size:1.5rem}
+.v p{color:var(--muted)}
+.vals{list-style:none;display:grid;gap:12px}
+.vals li{display:flex;gap:12px;align-items:center;font-weight:500}
+.vals svg{width:22px;height:22px;padding:5px;border-radius:50%;background:var(--green-soft);color:var(--green);flex:none}
+
+/* cta */
+.cta{background:var(--green);color:#fff;border-radius:26px;padding:clamp(36px,6vw,72px);display:grid;gap:18px;justify-items:start;position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;border:2px solid var(--gold);opacity:.55}
+.cta h2{font-size:clamp(1.9rem,4.4vw,3rem);max-width:18ch}
+.cta p{color:#CDEBDD;max-width:52ch}
+.cta .btn{background:#fff;color:var(--green)}
+.cta .btn:hover{background:var(--gold-soft)}
+
+/* contact */
+.cgrid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,80px)}
+.cgrid h2{font-size:clamp(2rem,4.4vw,3rem);margin:16px 0 18px}
+.info{display:grid;gap:12px;margin-top:28px}
+.info div{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.info small{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.info b{font-weight:600;overflow-wrap:anywhere}
+form{border:1px solid var(--line);border-radius:22px;padding:clamp(22px,4vw,36px);display:grid;gap:20px;background:#fff;box-shadow:0 24px 50px -34px rgba(16,32,26,.3)}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+label{display:block;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+input,select,textarea{width:100%;font:inherit;font-size:.95rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(14,122,79,.14)}
+#ok{color:var(--green);font-weight:500;font-size:.9rem;text-align:center}
+
+/* footer */
+footer{border-top:1px solid var(--line);background:#F7FAF8;padding-block:56px 40px}
+.lockup{display:flex;justify-content:center;padding-bottom:40px;margin-bottom:32px;border-bottom:1px solid var(--line)}
+.lockup svg{height:150px;width:auto;max-width:100%}
+.fbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;font-size:.85rem;color:var(--muted)}
+.fbar nav{gap:22px;font-size:.85rem}
+
+
+@media (max-width:940px){
+  .hero-grid,.about-grid,.cgrid,.grid2{grid-template-columns:minmax(0,1fr)}
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vgrid{grid-template-columns:minmax(0,1fr)}
+  .v+.v{border-left:0;border-top:1px solid var(--line)}
+  nav.main{display:none}
+  .menu{display:block}
+}
+@media (max-width:620px){
+  .grid3,.two{grid-template-columns:minmax(0,1fr)}
+  .hero h1 em{white-space:normal}
+  .lockup svg{height:110px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* additions for improved content */
+:root{--err:#B3261E;--err-soft:#FCEDEB}
+.panel li div span{display:block}
+.panel li div p{font-size:.9rem;color:var(--muted);margin-top:2px}
+.panel small{min-width:92px}
+.callout{margin-top:28px;border:1px solid var(--line);border-left:3px solid var(--gold);background:var(--gold-soft);border-radius:14px;padding:16px 20px;display:grid;gap:4px}
+.callout small{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6A12}
+.callout b{font-family:var(--display);font-size:1.35rem;font-weight:600}
+.step{grid-template-columns:48px minmax(0,1fr)}
+.step .ico{width:44px;height:44px}
+.legend{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:.88rem;color:var(--muted);margin-bottom:24px}
+.legend>span{display:inline-flex;gap:10px;align-items:center;flex-wrap:wrap}
+.kv{display:grid;gap:4px;margin-top:6px}
+.kv dt{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-top:10px}
+.kv dd{margin:0;color:var(--muted);font-size:.95rem}
+.card[hidden]{display:none}
+.card .link{align-self:flex-start}
+.fine{margin-top:20px;font-size:.85rem;color:var(--muted)}
+.appr{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.appr li{padding:24px 20px 0 0}
+.appr b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--green-soft);color:var(--green);font-family:var(--display);margin-bottom:14px}
+.appr h4{font-size:1.1rem;margin-bottom:6px}
+.appr p{color:var(--muted);font-size:.92rem}
+.founder{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(24px,6vw,80px)}
+.founder h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-top:16px}
+.founder blockquote{margin:0;display:grid;gap:16px;border-left:3px solid var(--gold);padding-left:clamp(18px,3vw,32px);font-size:1.15rem;line-height:1.7}
+.founder blockquote footer{border:0;background:none;padding:0;font-family:var(--display);font-size:1.15rem;font-weight:600;color:var(--ink);display:grid;gap:2px}
+.founder blockquote footer span{font-family:var(--body);font-size:.85rem;font-weight:500;color:var(--green)}
+.tl{list-style:none;padding:0;display:grid;gap:0;max-width:760px}
+.tl li{display:grid;grid-template-columns:104px minmax(0,1fr);gap:20px;padding:22px 0;border-top:1px solid var(--line);align-items:start}
+.tl li:last-child{border-bottom:1px solid var(--line)}
+.tl .pill{justify-self:start}
+.tl h4{font-size:1.1rem;margin-bottom:4px}
+.tl p{color:var(--muted);font-size:.95rem}
+.tl .next{opacity:.8}
+.aud{list-style:none;padding:0;display:grid;gap:12px;margin-top:24px}
+.aud li{color:var(--muted);font-size:.95rem}
+.aud b{display:block;color:var(--ink);font-weight:600}
+.mail{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.copy{font:600 .78rem var(--body);border:1px solid var(--line);background:#fff;border-radius:999px;padding:.3rem .8rem;cursor:pointer;color:var(--green)}
+.copy:hover{border-color:var(--green)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.err{display:block;min-height:0;color:var(--err);font-size:.82rem;margin-top:6px}
+input[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:var(--err)}
+#status{border-radius:12px;padding:14px 16px;font-size:.92rem}
+#status.ok{background:var(--green-soft);color:#0A5A3A}
+#status.bad{background:var(--err-soft);color:#7A1812}
+#status a{color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+#send[disabled]{opacity:.6;cursor:wait}
+@media (max-width:940px){
+  .appr{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}
+  .founder{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:620px){
+  .appr{grid-template-columns:minmax(0,1fr)}
+  .tl li{grid-template-columns:minmax(0,1fr);gap:8px}
+}
+.fine a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="bar">
+      <a href="#top" class="brand" aria-label="MUSKURA GROUP home">
+        <svg viewBox="500 366 250 220" fill="none" role="img" aria-label="MUSKURA GROUP logo mark"><polyline points="520,570 520,410 600,490 680,410 680,570" stroke="#10201A" stroke-width="16" stroke-linejoin="miter" stroke-linecap="butt"/><circle cx="722" cy="388" r="12" fill="#C39A2E"/></svg>
+        <span><b>MUSKURA</b><i>Group</i></span>
+      </a>
+      <nav class="main" aria-label="Main">
+        <a href="#about">About</a><a href="#ventures">Ventures</a><a href="#approach">Approach</a><a href="#journey">Journey</a>
+        <a href="#contact" class="btn btn-green">Partner With Us</a>
+      </nav>
+      <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <div id="mm">
+      <a href="#about">About</a><a href="#ventures">Ventures</a><a href="#approach">Approach</a><a href="#journey">Journey</a><a href="#contact" style="color:var(--green);font-weight:600">Partner With Us</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Media · Technology · Opportunity</span>
+      <h1>Innovating Africa's <em>Future</em> Through Media, Technology &amp; Opportunity.</h1>
+      <p class="lead"><b style="color:var(--ink);font-weight:600">MUSKURA GROUP</b> is an early-stage venture group building businesses designed to solve meaningful problems through technology, creativity and entrepreneurship.</p>
+      <div class="cta-row">
+        <a href="#ventures" class="btn btn-green">Explore Our Ventures
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <a href="#contact" class="btn btn-line">Partner With Us</a>
+      </div>
+    </div>
+    <ul class="panel" aria-label="What we focus on">
+      <li><small>Media</small><div><span>Stories that inform</span><p>Journalism and content with depth, starting with sport.</p></div></li>
+      <li><small>Technology</small><div><span>Tools that work</span><p>Software and AI built for practical, everyday problems.</p></div></li>
+      <li><small>Opportunity</small><div><span>Paths to growth</span><p>Platforms for learning, work and enterprise.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<hr class="hr">
+
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">About Muskura Group</span>
+      <h2>An early-stage group with a long-term view.</h2>
+      <p>MUSKURA GROUP is at the beginning of its journey. We are building useful, scalable businesses that serve people in Africa and can grow to serve people around the world.</p>
+      <p>We start small, learn from real users and keep improving. We are open about where each venture stands today.</p>
+      <div class="callout"><small>Our principle</small><b>Adapt, Change and Move Fast.</b></div>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></span><div><h4>Mission</h4><p>To build self-sustaining, useful ventures that solve everyday challenges in technology, information and employment across African markets.</p></div></div>
+      <div class="step"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><div><h4>Vision</h4><p>To grow into a trusted group of businesses, recognised across Africa and beyond for useful technology, honest media and real opportunity.</p></div></div>
+      <div class="step"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><div><h4>Values</h4><p>Integrity. Practical usefulness. Speed with care. Responsible growth.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="ventures" class="tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Our ventures</span>
+        <h2>What we are building</h2>
+        <p class="lead">Each venture is labelled with its real stage, so you know what exists today and what is still an idea.</p>
+      </div>
+      <div class="tabs" id="tabs">
+        <button class="tab on" data-cat="all">All</button>
+        <button class="tab" data-cat="tech">Technology</button>
+        <button class="tab" data-cat="media">Media</button>
+        <button class="tab" data-cat="careers">Careers</button>
+        <button class="tab" data-cat="future">Future</button>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Stage labels">
+      <span><span class="pill">Active</span> Live and running today.</span>
+      <span><span class="pill dev">In development</span> We are actively building it. It has not launched.</span>
+      <span><span class="pill exp">Concept</span> An idea we are researching. It is not available yet.</span>
+    </div>
+
+    <div class="grid3" id="grid">
+      <article class="card" data-cat="tech">
+        <div>
+          <div class="top"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 6.25v13m0-13C10.8 5.5 9.2 5 7.5 5S4.2 5.5 3 6.25v13C4.2 18.5 5.8 18 7.5 18s3.3.5 4.5 1.25m0-13C13.2 5.5 14.8 5 16.5 5c1.7 0 3.3.5 4.5 1.25v13C19.8 18.5 18.2 18 16.5 18c-1.7 0-3.3.5-4.5 1.25"/></svg></span><span class="pill dev">In development</span></div>
+          <h3>Islamic Knowledge &amp; Learning App</h3>
+          <dl class="kv"><dt>Problem</dt><dd>Learners often move between several apps and sites to study, pray and track their practice.</dd><dt>Who it serves</dt><dd>Muslims, students and learners who want one clear place for study and daily practice.</dd></dl>
+        </div>
+        <ul><li>Planned: Quran reader and prayer tracker</li><li>Planned: dhikr and adhkar</li></ul>
+        <a href="#contact" class="link" data-interest="the Islamic Knowledge & Learning App">Follow this venture →</a>
+      </article>
+
+      <article class="card" data-cat="media">
+        <div>
+          <div class="top"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg></span><span class="pill">Active</span></div>
+          <h3>Sports Journalism &amp; Digital Media</h3>
+          <dl class="kv"><dt>What it does</dt><dd>Sports content on Instagram, Snapchat, X, TikTok and YouTube, active for over two years, plus a Fantasy Premier League contest now in its second edition.</dd><dt>Who it serves</dt><dd>Sports fans and football followers who want to follow, discuss and take part.</dd></dl>
+        </div>
+        <ul><li>Active on five social platforms</li><li>Fantasy Premier League contest, 2nd edition</li><li>More programmes coming</li></ul>
+        <a href="#contact" class="link" data-interest="Sports Journalism & Digital Media">Follow this venture →</a>
+      </article>
+
+      <article class="card" data-cat="tech">
+        <div>
+          <div class="top"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></span><span class="pill exp">Concept</span></div>
+          <h3>Software &amp; AI Products</h3>
+          <dl class="kv"><dt>Problem</dt><dd>Many small businesses lack simple digital tools that fit how they actually work.</dd><dt>Who it would serve</dt><dd>Small and growing businesses and organisations.</dd></dl>
+        </div>
+        <ul><li>Web and mobile apps</li><li>AI workflow tools</li></ul>
+        <a href="#contact" class="link" data-interest="Software & AI Products">Ask about this →</a>
+      </article>
+
+      <article class="card" data-cat="careers">
+        <div>
+          <div class="top"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 13.25A24 24 0 0112 15c-3.2 0-6.2-.6-9-1.75M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></span><span class="pill exp">Concept</span></div>
+          <h3>Career &amp; Talent Platform</h3>
+          <dl class="kv"><dt>Problem</dt><dd>Talented young people struggle to find skills resources and real opportunities.</dd><dt>Who it would serve</dt><dd>Students, graduates and early-career professionals.</dd></dl>
+        </div>
+        <ul><li>Professional toolkits</li><li>Opportunity matching</li></ul>
+        <a href="#contact" class="link" data-interest="the Career & Talent Platform">Ask about this →</a>
+      </article>
+
+      <article class="card" data-cat="future">
+        <div>
+          <div class="top"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 8c-1.66 0-3 .9-3 2s1.34 2 3 2 3 .9 3 2-1.34 2-3 2m0-8c1.1 0 2.1.4 2.6 1M12 8V7m0 1v8m0 0v1m0-1c-1.1 0-2.1-.4-2.6-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span><span class="pill exp">Concept</span></div>
+          <h3>Financial Technology</h3>
+          <dl class="kv"><dt>Problem</dt><dd>Small merchants need simpler ways to take payments and trade across borders.</dd><dt>Who it would serve</dt><dd>Small merchants and traders. Early research only.</dd></dl>
+        </div>
+        <ul><li>Micro-transaction research</li><li>Merchant tools</li></ul>
+        <a href="#contact" class="link" data-interest="Financial Technology">Ask about this →</a>
+      </article>
+
+      <article class="card" data-cat="future">
+        <div>
+          <div class="top"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></span><span class="pill exp">Concept</span></div>
+          <h3>Logistics &amp; Supply Tech</h3>
+          <dl class="kv"><dt>Problem</dt><dd>Local distribution and delivery are hard to track and manage.</dd><dt>Who it would serve</dt><dd>Regional vendors and distributors. Early research only.</dd></dl>
+        </div>
+        <ul><li>Supply chain tracking</li><li>Vendor management</li></ul>
+        <a href="#contact" class="link" data-interest="Logistics & Supply Tech">Ask about this →</a>
+      </article>
+
+      <article class="card" data-cat="future">
+        <div>
+          <div class="top"><span class="ico"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span class="pill dev">In development</span></div>
+          <h3>Solar Technology</h3>
+          <dl class="kv"><dt>Problem</dt><dd>Many homes and small businesses face unreliable or costly electricity.</dd><dt>Who it would serve</dt><dd>Households and small businesses.</dd></dl>
+        </div>
+        <ul><li>Solar power solutions</li><li>Energy access for homes and businesses</li></ul>
+        <a href="#contact" class="link" data-interest="Solar Technology">Ask about this →</a>
+      </article>
+    </div>
+    <p class="fine">A venture is marked Active only when it is live and running.</p>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Our approach</span>
+        <h2>How we build</h2>
+      </div>
+    </div>
+    <ol class="appr">
+      <li><b>1</b><h4>Find real problems</h4><p>Start with what people actually struggle with.</p></li>
+      <li><b>2</b><h4>Build practical solutions</h4><p>Make something simple that works first.</p></li>
+      <li><b>3</b><h4>Listen to users</h4><p>Ask, watch and learn from how it is used.</p></li>
+      <li><b>4</b><h4>Improve continuously</h4><p>Change quickly when feedback says we should.</p></li>
+      <li><b>5</b><h4>Expand responsibly</h4><p>Grow only when the product has earned it.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="tint">
+  <div class="wrap founder">
+    <div>
+      <span class="eyebrow">Founder's note</span>
+      <h2>Why Muskura Group exists</h2>
+    </div>
+    <blockquote>
+      <p>Africa has no shortage of ideas, talent or problems worth solving. What it needs is more people willing to build practical solutions and stay with them.</p>
+      <p>We are at the start of that work. We do not have everything figured out, and we will not pretend to. What we do have is a commitment to move fast, listen carefully and build things that are genuinely useful.</p>
+      <p>If that sounds like something you want to be part of, as a user, a partner or a collaborator, we would like to hear from you.</p>
+      <footer>Musa Salihu Kuru<span>Founder &amp; CEO, MUSKURA GROUP</span></footer>
+    </blockquote>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Our journey</span>
+        <h2>Where we are today</h2>
+        <p class="lead">Only milestones that have actually happened appear here.</p>
+      </div>
+    </div>
+    <ol class="tl">
+      <li><span class="pill">Active</span><div><h4>Sports media channels, active for over two years</h4><p>Instagram, Snapchat, X, TikTok and YouTube pages publishing sports content.</p></div></li>
+      <li><span class="pill">Active</span><div><h4>Fantasy Premier League contest</h4><p>Now running its second edition, with more editions and programmes planned.</p></div></li>
+      <li><span class="pill">Done</span><div><h4>Company name and brand identity set</h4><p>MUSKURA GROUP name and logo established.</p></div></li>
+      <li><span class="pill">Done</span><div><h4>Company website created</h4><p>This site introduces the group and its ventures.</p></div></li>
+      <li><span class="pill dev">In progress</span><div><h4>Islamic Knowledge &amp; Learning App in early development</h4><p>The app is being planned and built.</p></div></li>
+      <li class="next"><span class="pill exp">Next</span><div><h4>More milestones to come</h4><p>Prototypes, launches and partnerships will be added here once they are confirmed.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="tint">
+  <div class="wrap cgrid">
+    <div>
+      <span class="eyebrow">Contact &amp; partnerships</span>
+      <h2>Talk to us</h2>
+      <p class="lead">Whether you want to follow a venture, use something we build, or explore working together, send us a message.</p>
+      <ul class="aud">
+        <li><b>Users and customers</b> Tell us what you would like to see or follow.</li>
+        <li><b>Investors and partners</b> We are open to relevant conversations. We are not announcing a funding round.</li>
+      </ul>
+      <div class="info">
+        <div><small>Email</small><span class="mail"><b id="mailtxt">MUSKURAGROUP@GMAIL.COM</b><button type="button" class="copy" id="copy">Copy</button></span></div>
+        <div><small>Based in</small><b>ABUJA FCT, NIGERIA</b></div>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <div class="two">
+        <div><label for="fn">Full name</label><input id="fn" name="name" autocomplete="name" required aria-describedby="fn-e"><span class="err" id="fn-e"></span></div>
+        <div><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" required aria-describedby="em-e"><span class="err" id="em-e"></span></div>
+      </div>
+      <div><label for="cat">I am a</label>
+        <select id="cat" name="role"><option>Potential user or customer</option><option>Investor</option><option>Business partner</option><option>Collaborator</option><option>Media or press</option><option>Other</option></select></div>
+      <div><label for="msg">Message</label><textarea id="msg" name="message" rows="5" required minlength="10" aria-describedby="msg-e"></textarea><span class="err" id="msg-e"></span></div>
+      <div class="hp" aria-hidden="true"><label for="site">Leave this empty</label><input id="site" name="site" tabindex="-1" autocomplete="off"></div>
+      <button class="btn btn-green" type="submit" id="send">Send message</button>
+      <p class="fine" style="margin-top:-6px">We use your details to reply to you. See our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div id="status" role="status" aria-live="polite" hidden></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="lockup">
+      <svg viewBox="250 370 700 455" fill="none" stroke="#10201A" stroke-linejoin="miter" stroke-linecap="butt" role="img" aria-label="MUSKURA GROUP logo">
+        <polyline points="520,570 520,410 600,490 680,410 680,570" stroke-width="14"/>
+        <circle cx="722" cy="388" r="10" fill="#C39A2E" stroke="none"/>
+        <g stroke-width="8">
+          <path d="M270 740 V670 L300 710 L330 670 V740"/>
+          <path d="M370 670 V720 Q370 740 390 740 H410 Q430 740 430 720 V670"/>
+          <path d="M530 670 H487.5 A17.5 17.5 0 0 0 487.5 705 H512.5 A17.5 17.5 0 0 1 512.5 740 H470"/>
+          <path d="M570 670 V740 M630 670 L572 706 L630 740"/>
+          <path d="M670 670 V720 Q670 740 690 740 H710 Q730 740 730 720 V670"/>
+          <path d="M770 740 V670 H805 Q830 670 830 687.5 Q830 705 805 705 H770 M800 705 L830 740"/>
+          <path d="M870 740 L900 670 L930 740"/>
+        </g>
+        <text x="600" y="810" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" letter-spacing="18" fill="#5A6B62" stroke="none">GROUP</text>
+      </svg>
+    </div>
+    <div class="fbar">
+      <span>&copy; <span id="yr">2026</span> MUSKURA GROUP. All rights reserved.</span>
+      <nav aria-label="Footer"><a href="#about">About</a><a href="#ventures">Ventures</a><a href="#contact">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+/* FORM_ENDPOINT is the Formspree form that delivers messages. If it is empty or a send fails,
+   the form will NOT claim success and will point people to the email address instead. */
+var FORM_ENDPOINT = "https://formspree.io/f/mjyykbvv";
+var CONTACT_EMAIL = "MUSKURAGROUP@GMAIL.COM";
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+var menu=document.getElementById('menu'),mm=document.getElementById('mm');
+menu.addEventListener('click',function(){var o=mm.classList.toggle('open');menu.setAttribute('aria-expanded',o)});
+mm.addEventListener('click',function(){mm.classList.remove('open')});
+
+document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+  var c=b.dataset.cat;
+  document.querySelectorAll('#grid .card').forEach(function(card){card.hidden=!(c==='all'||card.dataset.cat===c)});
+})});
+
+/* "Ask about this" links pre-fill the form, without overwriting anything the visitor typed */
+document.querySelectorAll('[data-interest]').forEach(function(a){a.addEventListener('click',function(){
+  var m=document.getElementById('msg');
+  if(!m.value.trim()){m.value="I'd like to hear more about "+a.dataset.interest+"."}
+})});
+
+/* copy email */
+var copyBtn=document.getElementById('copy');
+copyBtn.addEventListener('click',function(){
+  function done(t){copyBtn.textContent=t;setTimeout(function(){copyBtn.textContent='Copy'},1800)}
+  function fallback(){
+    var r=document.createRange();r.selectNodeContents(document.getElementById('mailtxt'));
+    var s=getSelection();s.removeAllRanges();s.addRange(r);done('Selected')}
+  try{
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(CONTACT_EMAIL).then(function(){done('Copied')},fallback)
+    }else{fallback()}
+  }catch(e){fallback()}
+});
+
+/* contact form */
+var form=document.getElementById('form'),statusEl=document.getElementById('status'),sendBtn=document.getElementById('send');
+function setErr(id,msg){
+  var f=document.getElementById(id),e=document.getElementById(id+'-e');
+  e.textContent=msg;
+  if(msg){f.setAttribute('aria-invalid','true')}else{f.removeAttribute('aria-invalid')}
+}
+function show(kind,html){statusEl.hidden=false;statusEl.className=kind;statusEl.innerHTML=html}
+function mailtoHref(v){
+  return 'mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent('Website enquiry from '+v.name+' ('+v.role+')')+
+    '&body='+encodeURIComponent(v.message+'\n\nName: '+v.name+'\nEmail: '+v.email)
+}
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  var v={name:form.fn.value.trim(),email:form.em.value.trim(),role:form.cat.value,message:form.msg.value.trim(),site:form.site.value};
+  var ok=true;
+  setErr('fn',v.name?'':'Please enter your name.');if(!v.name)ok=false;
+  var emailOk=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email);
+  setErr('em',emailOk?'':(v.email?'Please enter a valid email address.':'Please enter your email address.'));if(!emailOk)ok=false;
+  var msgOk=v.message.length>=10;
+  setErr('msg',msgOk?'':'Please write a message of at least 10 characters.');if(!msgOk)ok=false;
+  if(!ok){show('bad','Please fix the highlighted fields and try again.');var first=form.querySelector('[aria-invalid="true"]');if(first)first.focus();return}
+  if(v.site){return} /* spam trap */
+
+  if(!FORM_ENDPOINT){
+    show('bad','<b>Your message has not been sent.</b> This form is not connected to email delivery yet. Please email us at <b>'+CONTACT_EMAIL+'</b>, or <a href="'+mailtoHref(v)+'">open your email app with your message filled in</a>.');
+    return;
+  }
+  sendBtn.disabled=true;sendBtn.textContent='Sending...';
+  var ctl=new AbortController(),t=setTimeout(function(){ctl.abort()},15000);
+  fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify({name:v.name,email:v.email,role:v.role,message:v.message}),signal:ctl.signal})
+  .then(function(res){
+    if(!res.ok)throw new Error('HTTP '+res.status);
+    show('ok','Thank you, '+v.name.replace(/[<>&"]/g,'')+'. Your message was sent. We will reply to the email address you gave.');
+    form.reset();
+  })
+  .catch(function(){
+    show('bad','<b>Your message could not be sent.</b> Please try again, or email us at <b>'+CONTACT_EMAIL+'</b>.');
+  })
+  .then(function(){clearTimeout(t);sendBtn.disabled=false;sendBtn.textContent='Send message'});
+});
+['fn','em','msg'].forEach(function(id){document.getElementById(id).addEventListener('input',function(){setErr(id,'')})});
+</script>
+</body>
+</html>
